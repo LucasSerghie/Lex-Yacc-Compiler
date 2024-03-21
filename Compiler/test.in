@@ -1,0 +1,15 @@
+var k = int(input())
+var primes = []
+var num = 2
+
+while len(primes) < k:
+	var is_prime = True
+	for var i in range (2, (num ^ 0.5) + 1):
+		if num % i == 0:
+			is_prime = False
+			break
+		if is_prime:
+			primes.append(num)
+		num = num + 1
+
+	print("The first k prime numbers are primes")
